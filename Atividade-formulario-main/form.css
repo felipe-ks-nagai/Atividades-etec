@@ -1,0 +1,10 @@
+.h1formato { 
+    text-align: right;
+    background: gray;
+    font-style: italic;
+    font: 100;
+}
+body {
+    background-color: #343034;
+    color: white;
+}
