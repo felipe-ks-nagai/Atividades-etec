@@ -1,0 +1,29 @@
+:root{
+    --corpreto: #232c35;
+    --corbranco: #fafafa;
+    --centralizar: center;
+    --borda: 2px solid red;
+    --justificar: justify;
+}
+
+.black {
+    background-color: black;
+    color: aliceblue;
+}
+.dark {
+    background-color: var(--corpreto);
+    color:var(--corbranco);
+}
+.formula{
+    text-align: var(--centralizar);
+    border: var(--borda);
+    margin:40px;
+}
+.conceitos{
+    text-align: var(--justificar);
+    border: var(--borda);
+    margin: 40px; 
+}
+.textocor{
+    color: var(--corpreto);
+}

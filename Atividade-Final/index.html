@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <script src="JS/javascript.js"></script>
+ 
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/CSS.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="container-fluid">
+            <div class="col-12">
+                    <nav class="navbar navbar-light bg-warning navbar-expand-lg"> 
+                        <input type="button" id="themeSwitch1" value="Alterar tema" class="btn btn-dark" onclick="teste()">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#teorema" class="nav-link">TEOREMA DE PITÁGORAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#formul" class="nav-link">FÓRMULAS E CONCEITOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#exemplo" class="nav-link">EXEMPLO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#resolucao" class="nav-link">RESOLUÇÃO</a>
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </div>
+    <br />
+    <h1 style="text-align: center;" id="teorema">TEOREMA DE PITÁGORAS</h1>
+    <div class="row justify-content-center">
+        <div class="container-fluid">
+            <div class="card-group">
+                <div class="col-6">
+                    <div class="card bg-info text-white">
+                        <img src="IMG/pitagoras.png" class="card-img-top" height="256px">
+                        <div class="card-body">
+                             <h4 class="card-title">Onde e quando surgiu</h4>
+                                <p class="card-text">Vindo da civilização bem antiga da Grécia, o filósofo matemático Pitágoras decidiu estudar os cálculos Egípcios. Ele quem descobriu como os funcionava, por volta dos anos 500 a.C.</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-6">
+                    <div class="card bg-info text-white">
+                        <img src="IMG/arquitetura.jpg" class="card-img-top" height="256px">
+                        <div class="card-body">
+                            <h4 class="card-title">Para o que é usado</h4>
+                                <p class="card-text">Bastante usado na arquitetura e na engenharia de hoje, que facilita muito a construção e o planejamento de edíficos. Há outras áreas também, como na matemática e na física.</p>
+                         </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <h1 id="formula">FÓRMULA E CONCEITOS
+        <small class="text-muted">Como funciona</small>
+    </h1>
+        <img src="IMG/triangulo.jpg" class="img-fluid">
+    <br />
+        <h3 class="formula">A² = B² + C² </h3>
+            <h4 class="formula">A² =  Hipotenusa<br />B² = Cateto 1 <br />C² = Cateto 2</h4>
+                <p class="conceitos">Antes de usar essa fórmula, é necessários entender o conceito, que é muito importante, para não cometer algum erro.<br />O triângulo precisa ter um ângulo reto (90°), para ser um triângulo retângulo;<br />A hipotenusa é sempre oposta ao ângulo reto;<br />Os catetos são sempre os que tão nos cantos do ângulo.</p>
+    <h1 id="exemplo">EXEMPLO</h1>
+        <img src="IMG/exemplo.png">
+    <br /><br />
+        <h4 style="text-align: justify;">No nosso exemplo, o X é a nosa hipotenusa. Podemos perceber isso, olhando que esse lado é o posto do ângulo reto. Podemos então, aplicar o teorema de pitágoras.</h4>
+            <h5>X² = 8² + 6² <br /> X² = 64 + 36<br />X² = 100<br />√X = √100<br />X = 10</h5>
+    <br />
+    <h1 id="resolucao">RESOLUÇÃO ONLINE</h1>
+        <input type="button" id="hipotenusa" class="btn btn-info" value="Descobrir a hipotenusa" onclick="hipotenusa()">
+        <input type="button" id="cateto" class="btn btn-info" value="Descobrir um cateto" onclick="cateto()">
+</body>
+</html>
